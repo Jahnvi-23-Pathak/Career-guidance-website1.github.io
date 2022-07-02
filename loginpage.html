@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='loginpage.css'>
+    <link rel="stylesheet"
+    href="college1.css">
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--Custom CSS-->
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <div id="TOP">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="text" href="#"> JP Career <span class="brand">Guidance</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" id="links" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="links" href="loginpage.html">GUIDANCE</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: rgb(218, 85, 9)">SIGN IN</a>
+                  </li>
+               
+              </ul>
+            </div>
+          </div>
+         
+        </nav>
+        <div class="scrolls">
+            <!--<a href="#" class="scroll-down" address="true">
+              <img src="Images/mouse_click.png" alt="">-->
+              <a id="go-to-top" href="#TOP">
+              <img src="Images/mouse_click.png" alt=""></a>
+          </div>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box">
+                <div class="card-front">
+
+                    <h2>LOGIN</h2>
+                    <br><br>
+
+                    <form action="connect.php" name="RegForm" id="reg_form" class="form-container" method="POST" onsubmit="return validate()">
+                    
+                        <input type="text" class="input-box" placeholder="first name" id="fn" name="firstname" pattern="[A-Z a-z]{2,40}"required>
+                        <br><br>
+                        <input type="text" class="input-box" placeholder="last name" id="ln" name="lastname" pattern="[A-Z a-z]{2,40}" required>
+                        <br><br>
+                        <input type="email" class="input-box" placeholder="Your email id" id="em" name="email" pattern="[A-Z a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <br><br>
+                        <input type="password" class="input-box" placeholder="password(at least 6 chars)" id="pass" name="password" pattern=".{6,}" required>
+                        <br><br>
+                        <div class="submit1"><button type="submit" class="submitbtn">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
