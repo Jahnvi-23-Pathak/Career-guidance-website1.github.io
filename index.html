@@ -128,24 +128,24 @@
             <div class="formbox">
               <div class="inputbox w50">
                 <form action="message.php" id="msg_form" class="form-container" method="POST">
-                <input type="text" name="firstname" pattern="[A-Z a-z]{2,40}" required>
-                <span>First Name</span>
+                <input type="text" name="firstname" placeholder="First Name" pattern="[A-Z a-z]{2,40}" required>
+                
               </div>
               <div class="inputbox w50">
-                <input type="text" name="lastname" pattern="[A-Z a-z]{2,40}" required>
-                <span>Last Name</span>
+                <input type="text" name="lastname" placeholder="Last Name" pattern="[A-Z a-z]{2,40}" required>
+                
               </div>
               <div class="inputbox w50">
-               <input type="email" name="email" pattern="[A-Z a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-               <span>Email Address</span>
+               <input type="email" name="email" placeholder="Email Address" pattern="[A-Z a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+               
               </div>
               <div class="inputbox w50">
-                <input type="text" name="mobile" pattern="[7-9]{1}[0-9]{9}" required>
-                <span>Mobile Number</span>
+                <input type="text" name="mobile" placeholder="Mobile Number" pattern="[7-9]{1}[0-9]{9}" required>
+                
               </div>
               <div class="inputbox w100">
-                <textarea name="text" required></textarea>
-                <span>Write your message here...</span>
+                <textarea name="text" placeholder="Write your message here..." required></textarea>
+                
               </div>
               <div class="inputbox w50">
                 <input type="submit" value="Send">
